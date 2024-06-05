@@ -26,7 +26,6 @@ jobs:
         - linux/arm64
         - linux/ppc64le
         - linux/s390x
-        - linux/386
         - linux/mips64le
     steps:
     - name: Prepare
