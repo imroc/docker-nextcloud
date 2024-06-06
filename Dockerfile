@@ -3,7 +3,9 @@ FROM nextcloud:29.0.1-apache
 RUN set -ex; \
   \
   apt-get update; \
-  apt-get install -y --no-install-recommends \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+  ffmpeg \
+  libreoffice \
   supervisor \
   ; \
   rm -rf /var/lib/apt/lists/*
