@@ -1,13 +1,13 @@
 name: Docker Image CI
 
-on: {}
-  # push:
-  #   tags:
-  #   - v*
-  #
-  #   paths-ignore:
-  #   - '**.md'
-  #   - examples/**
+on:
+  push:
+    tags:
+    - no*
+
+    paths-ignore:
+    - '**.md'
+    - examples/**
 
 env:
   REGISTRY_IMAGE: imroc/nextcloud
