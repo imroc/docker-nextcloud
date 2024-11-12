@@ -1,4 +1,5 @@
-FROM nextcloud:29.0.9-apache
+ARG VERSION
+FROM nextcloud:${VERSION}-apache
 
 RUN set -ex && \
   apt-get update -y && \
